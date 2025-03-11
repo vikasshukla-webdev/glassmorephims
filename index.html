@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-image: url("https://img.freepik.com/free-photo/fantasy-style-galaxy-background_23-2151114333.jpg");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            }
+            header{
+                position: absolute;
+                top: 10px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding: 20px 50px;
+            }
+            .logo img{
+                height: 40%;
+                width: 40%;
+                border-radius: 50%;
+                backdrop-filter: blur(10px);
+
+            }
+            nav ul{
+                list-style: none;
+                display: flex;
+
+
+            }
+            nav ul li {
+                margin: 0 15px;
+
+            }
+            nav ul li a {
+             text-decoration: none;
+             color: white;
+             padding: 10px 20px;
+             border-radius: 50px;
+             transition: 0.3s;
+            }
+            nav ul li a:hover {
+                background: rgba(255, 255, 255, 0.2);
+
+            }
+            .container {
+            display: flex;
+            gap: 40px;
+            margin-top: 100px;
+            }
+            .info-box, .login-box {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+             padding: 30px;
+             border-radius: 15px;
+             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+             width: 350px;
+             text-align: center;
+            }
+            .info-box h1 {
+            font-size: 24px;
+            }
+            .info-box p {
+                margin: 10px 0;
+            }
+
+
+             .learn-btn {
+             margin-top: 10px;
+             padding: 10px 20px;
+             border: none;
+             border-radius: 20px;
+             background: white;
+             color: #0072ff;
+             cursor: pointer;
+             transition: 0.3s;
+            }   
+            .learn-btn:hover {
+           background: #00c6ff;
+          color: white;
+        }
+        .login-box h2 {
+    margin-bottom: 20px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background: white;
+    color: #0072ff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-box button:hover {
+    background: #00c6ff;
+    color: white;
+}
+.dots{
+    height: 30px;
+    width: 100px;
+    display: flex;
+    justify-content: end;
+    gap:10px;
+    margin: 100px 0px 0px 180px;
+}
+.child{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="logo" height="10%" width="10%">                  
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="info-box">
+            <h1>GLASSMORPHISM</h1>
+            <h2>Login Page</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quidem nesciunt, suscipit magnam enim quo, nobis iusto dolore earum repellendus at. Libero nisi nobis eum quae omnis placeat. Neque, earum.</p>  
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iste optio soluta, sequi corporis, cupiditate hic quo enim fugit eius laborum unde facilis sunt tempora dolor a? Rem, totam esse.</p>
+          <a href="https://youtu.be/d8zc3KYv6S4?si=bJQ_Ti3EwHv5eDq7"><button class="learn-btn">Learn More</button> </a>                        
+<div class="dots">
+    <div class="child"></div>
+    <div class="child"> </div>
+    <div class="child"> </div>
+    <div class="child"> </div>
+</div>
+            
+
+        </div>
+
+
+        <div class="login-box">
+            <h2>Login</h2>
+            <form>
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
